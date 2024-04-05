@@ -109,7 +109,7 @@ DataFrame extractTagFastq(const char* fastq_path,const char* out_path,
       oss << record;
     }
   }
-  Rcpp::Rcout << "hi";	
+  Rcpp::Rcout << "hi" << endl;	
   oss.flush();
   Rcpp::Rcout << "In total " << j << " reads out of " << i << " reads are identified with a valid adapter." << endl;
   Rcpp::Rcout << "Within them, " << tags.size() << " reads are identified with a valid tag region." << endl;
